@@ -5,10 +5,11 @@ build_script:
 
 
     echo %PATH%
+    
     Set Path=%path%;C:\MinGW\msys\1.0\bin;C:\MinGW\bin
 
     mingw-get install mingw32-pthreads-w32-dev
-    
+
     make
 
     7z.exe a linuxtest.zip protobuf.so p.so
